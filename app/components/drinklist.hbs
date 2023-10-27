@@ -1,0 +1,22 @@
+<article class="drinklist">
+     <Drinkimage::Image
+    src={{@drinklist.image_url}}
+    alt="{{@drinklist.name}}"
+  />
+  
+  <div class="details">
+    <h3>
+      <LinkTo @route="drinkpopup" @model={{@drinklist}}> 
+        {{@drinklist.name}}
+      </LinkTo>
+    </h3>
+    <br>
+  
+    <div class="detail">
+      <span>Tagline:</span> {{@drinklist.tagline}}
+    </div>
+    <div class="detail">
+      <span>First brewed:</span> {{@drinklist.first_brewed}}
+    </div>
+  </div>
+</article>

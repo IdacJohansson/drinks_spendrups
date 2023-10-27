@@ -1,0 +1,12 @@
+<Box>
+  <h2>Drinks!</h2>
+  <p>Select your drinks and add to favorites</p>
+
+<div class="">
+  <ul class="loop">
+    {{#each @model as |drinklist|}}
+      <li><Drinklist @drinklist={{drinklist}} /></li>
+    {{/each}}
+  </ul>
+</div>
+</Box>

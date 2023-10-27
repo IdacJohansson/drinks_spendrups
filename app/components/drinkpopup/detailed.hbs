@@ -1,0 +1,25 @@
+<Box>
+<article class="popup">
+  <div class="details">
+    <h3 >{{@drinkpopup.name}}</h3>
+
+   <div class="detail">
+      <span>Volume:</span> {{@drinkpopup.volume.value}} 
+    </div>
+    <div class="detail">
+      <span>Unit:</span> {{@drinkpopup.volume.unit}}
+    </div>
+    
+    <br>
+     <Drinkimage::Image
+    src={{@drinkpopup.image_url}}
+    alt="{{@drinkpopup.name}}"
+  />
+  </div>
+  <br>
+</article> 
+
+<a href="#" {{action "addToFavorites" @drinkpopup.name}} class="button-heart">
+ <i class="bi bi-heart-fill"></i>
+  </a> 
+</Box>
